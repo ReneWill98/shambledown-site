@@ -82,8 +82,8 @@ For that it processes the six-digit room code, the IP addresses and ports of bot
 the game data (including player name, character, game version, the device code, whether the
 world ranking is on, and the running game state). The server keeps none of it permanently: a
 room ends two minutes after the last packet, and its data are then gone from memory. Its logs
-hold only room codes and packet counts, no addresses. This connection is currently not
-encrypted.</p>
+hold only room codes and packet counts, no addresses. The game data are encrypted between
+the two devices (DTLS); the relay server cannot read them either.</p>
 <p>Your partner sees your player name and your character in the game, not your IP address.</p>
 <p><strong>Legal basis:</strong> Art. 6(1)(b) GDPR (providing the feature you request by
 opening or joining a room). If you do not use co-op over the internet, no connection to the

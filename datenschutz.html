@@ -86,8 +86,8 @@ beider Geräte sowie die Spieldaten (darunter Spielername, Spielfigur, Spielvers
 Gerätecode und ob die Weltrangliste eingeschaltet ist, sowie laufende Spielzustände). Der
 Server speichert nichts davon dauerhaft: Ein Raum endet zwei Minuten nach dem letzten
 Datenpaket, dann sind die Daten aus dem Arbeitsspeicher gelöscht. Seine Protokolle enthalten
-nur Raumcodes und Paketzähler, keine Adressen. Diese Verbindung ist derzeit nicht
-verschlüsselt.</p>
+nur Raumcodes und Paketzähler, keine Adressen. Die Spieldaten sind zwischen den beiden
+Geräten verschlüsselt (DTLS); auch der Relais-Server kann sie nicht lesen.</p>
 <p>Dein Partner sieht im Spiel deinen Spielernamen und deine Spielfigur, nicht deine
 IP-Adresse.</p>
 <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Bereitstellung der Funktion,
